@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SolarSystemSimulation</string>
+    <string name="action_settings">Settings</string>
+   
+     <string name="planet_title">Planets</string>
+     <string name="table_title">Mercury</string>
+    
+    <string name="diameter_text">Diameter:</string>
+    <string name="circumference_text">Circumference:</string>
+    <string name="solar_distance_text">Distance(from Sun):</string>
+    <string name="hours_per_day_text">Hours per Day:</string>
+    <string name="axis_rotational_speed_text">Axis Rotational Speed:</string>
+    <string name="solar_orbit_days_text">Solar Orbit Days:</string>
+    <string name="solar_orbit_distance_text">Solar Orbit Distance:</string>
+    <string name="solar_orbit_speed_text">Solar Orbit Speed:</string>
+    <string name="total_moons_text">Number of Moons:</string>
+    
+</resources>

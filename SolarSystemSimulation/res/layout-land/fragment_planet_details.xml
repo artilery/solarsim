@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_background"
+    android:gravity="center_vertical" >
+    
+    
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1" >
+        <TableRow android:padding="10dp">
+           
+            <TextView
+                style="@style/textviewstyle"
+                android:text="@string/table_title"/>
+
+            
+        </TableRow>
+
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+         
+        <TableRow android:padding="10dp" >
+
+            <TextView
+                style="@style/textviewstyle"
+                android:text="@string/diameter_text"
+                 />
+
+            <TextView
+                android:id="@+id/diameter"
+                style="@style/textviewstyle" />
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+                style="@style/textviewstyle"
+                android:text="@string/circumference_text"
+                 />
+
+            <TextView
+                android:id="@+id/circumference"
+                style="@style/textviewstyle" />
+        </TableRow>
+        
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+                style="@style/textviewstyle"
+                android:text="@string/solar_distance_text"
+                 />
+
+            <TextView
+                android:id="@+id/solar_distance"
+                style="@style/textviewstyle" />
+        </TableRow>
+         
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+               style="@style/textviewstyle"
+                android:text="@string/hours_per_day_text"
+                 />
+
+            <TextView
+                android:id="@+id/hours_per_day"
+                style="@style/textviewstyle" />
+        </TableRow>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+                style="@style/textviewstyle"
+                android:text="@string/axis_rotational_speed_text"
+                 />
+
+            <TextView
+                android:id="@+id/axis_rotational_speed"
+                style="@style/textviewstyle" />
+        </TableRow>
+        
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+              style="@style/textviewstyle"
+                android:text="@string/solar_orbit_days_text"
+               />
+
+            <TextView
+                android:id="@+id/solar_orbit_days"
+                style="@style/textviewstyle" />
+        </TableRow>
+        
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+               style="@style/textviewstyle"
+                android:text="@string/solar_orbit_distance_text"
+                />
+
+            <TextView
+                android:id="@+id/solar_orbit_distance"
+               style="@style/textviewstyle" />
+        </TableRow>
+        
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+              style="@style/textviewstyle"
+                android:text="@string/solar_orbit_speed_text"
+                />
+
+            <TextView
+                android:id="@+id/solar_orbit_speed"
+               style="@style/textviewstyle" />
+        </TableRow>
+        
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+
+        <TableRow android:padding="10dp" >
+
+            <TextView
+                style="@style/textviewstyle"
+                android:text="@string/total_moons_text"
+                />
+
+            <TextView
+                android:id="@+id/total_moons"
+                style="@style/textviewstyle" />
+        </TableRow>
+         
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" 
+            android:background="@drawable/divider"/>
+    </TableLayout>
+
+</RelativeLayout>
