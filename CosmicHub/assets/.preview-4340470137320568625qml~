@@ -1,0 +1,31 @@
+// Default empty project template
+import bb.cascades 1.0
+
+TabbedPane {
+    onCreationCompleted: {
+        Qt.logged_in = false;
+    }
+    
+    tabs: [
+        Tab {
+            title: "Sighting"
+            content: Sightings {
+            
+            }
+            imageSource: "images/icons/sighting_icon.png"
+        },
+        
+        Tab {
+            title: "My Sightings"
+            imageSource: "images/icons/mysightings_icon.png"
+            content: MySightings {
+                id: my_sightings
+            }
+            
+            onTriggered: {
+                my_sightings.loadSightings();
+            }
+        }
+    ]
+}
+

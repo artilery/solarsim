@@ -1,0 +1,65 @@
+import bb.cascades 1.0
+
+NavigationPane {
+    id: nav_pane
+PageTemplate {
+    titleText: "Sightings"
+    
+    actions: [
+        ActionItem {
+            title: "Filter"
+            ActionBar.placement: ActionBarPlacement.OnBar
+            imageSource: "images/icons/filter_icon.png"
+        },
+        
+        ActionItem {
+            title: "Sort"
+            ActionBar.placement: ActionBarPlacement.OnBar
+            imageSource: "images/icons/sort_icon.png"
+        }
+    ]
+    
+    attachedObjects: [
+        ComponentDefinition {
+            id: sighting
+            source: "sighting.qml"
+        }
+    ]
+    
+    pageContent:
+        Container {
+        onCreationCompleted: {
+            var sighting;
+            
+            for (var i = 0; i < 10; i++)
+            {
+                sighting = new Object();
+                sighting.name = "Cerberus";
+                sighting.date = "20 August 2012"
+                sighting.au = 1.34;
+                
+                array_model.append(sighting);
+            }
+        }
+        
+        ListView {
+            id: list_view
+            
+            dataModel: ArrayDataModel {
+                id: array_model
+            }
+            
+            listItemComponents: [
+                SightingItem {
+                    
+                }
+            ]
+            
+            onTriggered: {
+                var s = sighting.createObject();
+                nav_pane.push(s);
+            }
+        }
+    }
+}
+}

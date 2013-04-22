@@ -1,0 +1,15 @@
+import bb.cascades 1.0
+
+PageTemplate {
+    pageContent: Container {
+        leftPadding: 20
+        topPadding: 20
+        rightPadding: 20
+        
+        ImageView {
+            preferredWidth: 600
+            preferredHeight: 600
+            horizontalAlignment: HorizontalAlignment.Center
+        }
+    }
+}

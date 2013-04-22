@@ -1,0 +1,40 @@
+import bb.cascades 1.0
+
+Sheet {
+	content: PageTemplate {
+	    titleText: "Login"
+	    
+	    actions: [
+	        ActionItem {
+	            onTriggered: {
+	            	close();
+	            }
+	            
+	            title: "Cancel"
+	            
+	        }
+	    ]
+	    
+	    pageContent: Container {
+	        leftPadding: 20
+	        rightPadding: 20
+	        topPadding: 20
+	        
+	        TextField {
+	            hintText: "Username"
+	        }
+	        
+	        TextField {
+	            hintText: "Password"
+	            inputMode: TextFieldInputMode.Password
+	        }
+	        
+	        Button {
+	            text: "Login"
+	            onClicked: {
+	                
+	            }
+	        }
+	    }
+	}
+}
