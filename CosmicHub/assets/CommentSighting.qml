@@ -24,7 +24,7 @@ Sheet {
                 id: server_interface
 
                 onRequestDone: {
-                    page.stopLoading();
+                    loading_dialog.cancel();
                     if (con_error == "") 
                     {
                     	var json = eval('(' + data + ')');
@@ -51,6 +51,9 @@ Sheet {
             },
             SystemDialog {
                 id: dialog
+            },
+            LoadingDailog {
+                id: loading_dialog
             }
         ]
 	    
@@ -68,12 +71,13 @@ Sheet {
             Button {
                 text: "Submit"
                 onClicked: {
+                    loading_dialog.show();
                     console.debug("userID: " + Qt.userID + " sightingid" + Qt.sightingInfo.id)
                     page.startLoading();
                     server_interface.addParam("userId", Qt.userID);
                     server_interface.addParam("sightingId", Qt.sightingInfo.id);
                     server_interface.addParam("comment", txt_comment.text);
-                    //server_interface.requestFunctionPost("comment.php");
+                    server_interface.requestFunctionPost("comment.php");
                 }
             }
             
